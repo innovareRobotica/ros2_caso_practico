@@ -1,7 +1,5 @@
 # Caso Práctico de ROS2: Topics y Servicios con Mensajes y Servicios Customizados
 
-# Caso Práctico de ROS2: Topics y Servicios con Mensajes y Servicios Customizados
-
 ## Descripción
 Este repositorio presenta un caso práctico de implementación en **ROS2**, donde se exploran **topics y servicios** utilizando **mensajes y servicios customizados**. La idea es emular el comportamiento de un **carro inteligente** comunicándose con un **semáforo inteligente**, inspirado en el sistema **GLOSA (Green Light Optimal Speed Advisory)**.
 
