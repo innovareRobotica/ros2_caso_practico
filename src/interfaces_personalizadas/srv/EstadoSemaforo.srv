@@ -1,0 +1,3 @@
+---
+string semaforo_estado
+float64 tiempo_cambio

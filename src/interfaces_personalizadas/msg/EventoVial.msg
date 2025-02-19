@@ -1,0 +1,2 @@
+string id_evento
+float64 distancia
