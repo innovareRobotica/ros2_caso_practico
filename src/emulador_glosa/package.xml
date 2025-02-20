@@ -3,7 +3,7 @@
 <package format="3">
   <name>emulador_glosa</name>
   <version>0.0.0</version>
-  <description>Pacakge que presenta un caso práctico de implementación en ROS2, 
+  <description>Package que presenta un caso práctico de implementación en ROS2, 
   donde se exploran topics y servicios utilizando mensajes y servicios customizados. 
   La idea es emular el comportamiento de un carro inteligente comunicándose con un 
   semáforo inteligente, inspirado en el sistema GLOSA (Green Light Optimal Speed Advisory).

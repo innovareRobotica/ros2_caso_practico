@@ -12,7 +12,7 @@ class GestorVelocidad : public rclcpp::Node
 {
 public:
   GestorVelocidad()
-  : Node("Gestor_Velocidad"), velocidadMeta_(50.0) // Inicialización del nodo y velocidad por defecto
+  : Node("Gestor_Velocidad"), velocidadMeta_(12.0) // Inicialización del nodo y velocidad por defecto
   {
     // Callback del temporizador: publica la velocidad meta periódicamente
     auto timer_callback =
