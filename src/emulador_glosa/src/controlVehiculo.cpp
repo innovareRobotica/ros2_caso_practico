@@ -16,7 +16,7 @@ public:
         RCLCPP_INFO(this->get_logger(), "Velocidad meta recibida: '%f'", msg->velocidad);
       };
 
-    // Suscripción al topic "Velocidad_Meta" con una cola de tamaño 10
+    // Suscripción al topic "Velocidad_Meta" con una cola de tamaño 10 , recordar {callback(msg)}
     subscription_ =
       this->create_subscription<interfaces_personalizadas::msg::VelocidadMeta>("Velocidad_Meta", 10, topic_callback);
   }

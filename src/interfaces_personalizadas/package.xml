@@ -3,14 +3,17 @@
 <package format="3">
   <name>interfaces_personalizadas</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="innovare@todo.todo">innovare</maintainer>
+  <description>Package con mensajes y servicios personalizados para uso externo e interno</description>
+  <maintainer email="robotica@innovare2025.onmicrosoft.com">innovare</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>
 
   <test_depend>ament_lint_auto</test_depend>
   <test_depend>ament_lint_common</test_depend>
+  
+  <!-- Dependencias del nodo -->
+  <depend>rclcpp</depend>
 
   <!-- Agregar para poder generar mensajes -->
   <buildtool_depend>rosidl_default_generators</buildtool_depend>

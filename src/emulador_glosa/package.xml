@@ -3,8 +3,12 @@
 <package format="3">
   <name>emulador_glosa</name>
   <version>0.0.0</version>
-  <description>TODO: Package description</description>
-  <maintainer email="innovare@todo.todo">innovare</maintainer>
+  <description>Pacakge que presenta un caso práctico de implementación en ROS2, 
+  donde se exploran topics y servicios utilizando mensajes y servicios customizados. 
+  La idea es emular el comportamiento de un carro inteligente comunicándose con un 
+  semáforo inteligente, inspirado en el sistema GLOSA (Green Light Optimal Speed Advisory).
+  </description>
+  <maintainer email="robotica@innovare2025.onmicrosoft.com">innovare</maintainer>
   <license>Apache-2.0</license>
 
   <buildtool_depend>ament_cmake</buildtool_depend>

@@ -8,6 +8,13 @@ endif()
 # find dependencies
 find_package(ament_cmake REQUIRED)
 
+# Encontrar dependencias del nodo
+find_package(rclcpp REQUIRED)
+
+# Agregar ejecutables planificador ruta 
+add_executable(publicadorSimple src/publicadorSimple.cpp)
+ament_target_dependencies(publicadorSimple rclcpp)
+
 # Agregar para poder generar mensajes
 find_package(rosidl_default_generators REQUIRED)
 rosidl_generate_interfaces(${PROJECT_NAME}
@@ -15,6 +22,20 @@ rosidl_generate_interfaces(${PROJECT_NAME}
   "msg/VelocidadMeta.msg"
   "srv/EstadoSemaforo.srv"
 )
+
+# Requerido para usar mensajes en el mismo package, antigua version
+# rosidl_target_interfaces(publicadorSimple
+#   ${PROJECT_NAME} "rosidl_typesupport_cpp")
+# Obtener el tipo de soporte para el mensaje
+rosidl_get_typesupport_target(cpp_typesupport_target "${PROJECT_NAME}" "rosidl_typesupport_cpp")
+
+# Vincular el tipo de soporte con el nodo
+target_link_libraries(publicadorSimple "${cpp_typesupport_target}")
+
+# Agregar ejecutables al proyecto
+install(TARGETS
+  publicadorSimple
+  DESTINATION lib/${PROJECT_NAME})
 
 if(BUILD_TESTING)
   find_package(ament_lint_auto REQUIRED)
