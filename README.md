@@ -9,7 +9,7 @@ El sistema está compuesto por **cuatro nodos**:
 - 🚦 **Manager del Semáforo Inteligente**: Controla el estado del semáforo y envía datos al vehículo.
 - 🛠 **Control del Vehículo**: Recibe las instrucciones y ejecuta la conducción.
 
-El sistema incluye **dos mensajes personalizados** y **un servicio**. En la imagen de abajo se ilustra el sistema de manera sencilla.
+El sistema incluye **dos mensajes personalizados** y **un servicio**.
 
 ## Características principales
 - ✅ Definición y uso de **mensajes customizados** en topics
