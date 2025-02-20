@@ -4,8 +4,8 @@
 Este repositorio presenta un caso práctico de implementación en **ROS2**, donde se exploran **topics y servicios** utilizando **mensajes y servicios customizados**. La idea es emular el comportamiento de un **carro inteligente** comunicándose con un **semáforo inteligente**, inspirado en el sistema **GLOSA (Green Light Optimal Speed Advisory)**.
 
 El sistema está compuesto por **cuatro nodos**:
-- 🚗 **Planificador de Ruta**: Determina la trayectoria del vehículo.
-- ⚡ **Gestor de Velocidad**: Regula la velocidad en función del semáforo.
+- 🚗 **Planificador de Ruta**: Encargado de la trayectoria del vehículo, publica eventos viales.
+- ⚡ **Gestor de Velocidad**: Regula la velocidad en función del contexto.
 - 🚦 **Manager del Semáforo Inteligente**: Controla el estado del semáforo y envía datos al vehículo.
 - 🛠 **Control del Vehículo**: Recibe las instrucciones y ejecuta la conducción.
 
@@ -27,7 +27,7 @@ El sistema incluye **dos mensajes personalizados** y **un servicio**. En la imag
    git clone <URL_DEL_REPOSITORIO>
    cd ~/ros2_caso_practico
    colcon build
-   source install/setup.bash
+   source install/local_setup.bash
    ```
 
 2. Ejecutar los nodos:
